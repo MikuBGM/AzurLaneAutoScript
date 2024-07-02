@@ -77,7 +77,6 @@ class OSStatus(UI):
             else:
                 break
 
-        self.config.stored.YellowCoin.value = yellow_coins
         return yellow_coins
 
     def get_purple_coins(self) -> int:
