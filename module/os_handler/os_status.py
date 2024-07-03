@@ -90,4 +90,5 @@ class OSStatus(UI):
     def os_shop_get_coins(self):
         self._shop_yellow_coins = self.get_yellow_coins()
         self._shop_purple_coins = self.get_purple_coins()
+        self.config.stored.PurpleCoin.value = self._shop_purple_coins
         logger.info(f'Yellow coins: {self._shop_yellow_coins}, purple coins: {self._shop_purple_coins}')
